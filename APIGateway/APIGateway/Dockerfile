@@ -11,7 +11,7 @@ COPY ["APIGateway/APIGateway/APIGateway.csproj", "."]
 RUN dotnet restore
 
 # Copy everything into the docker directory and build
-COPY Microservices_Docker/APIGateway/APIGateway/ .
+COPY APIGateway/APIGateway/ .
 RUN dotnet publish "APIGateway.csproj" -c Release -o out
 
 # Build runtime final image
