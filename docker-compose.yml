@@ -1,0 +1,30 @@
+
+version: '3.8'
+
+services:
+  frontend:
+    image: omkarm7/project-k:frontend
+    ports:
+      - 4200:80
+
+
+        #  ProductService:
+        # image: 
+        #ports:
+        # - "7033:80"
+  
+
+  APIGatewayService:
+    image: omkarm7/project-k:APIGatewayService
+    ports:
+     - "7115:80"
+
+  UserMService:
+    image: omkarm7/project-k:UserService
+    ports:
+     - "7124:80"
+  
+
+
+
+
