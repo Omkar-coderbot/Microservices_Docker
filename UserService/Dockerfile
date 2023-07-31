@@ -14,7 +14,6 @@ RUN dotnet build "UserService.csproj" -c Release -o /app/build
 FROM build AS publish
 RUN dotnet publish "UserService.csproj" -c Release -o /app/publish
 
-COPY appsettings.json .
 
 FROM base AS final
 WORKDIR /app
