@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
 {
-    builder.WithOrigins("http://52.66.152.140:5005/").AllowAnyMethod().AllowAnyHeader();
+    builder.WithOrigins("http://52.66.152.140:5005").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
 }));
 // Add services to the container.
 builder.Services.AddDbContext<UserDbContext>(options =>
