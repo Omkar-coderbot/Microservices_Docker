@@ -35,7 +35,7 @@ COPY ["UserService/UserService.csproj", "."]
 RUN dotnet restore
 
 # Copy everything into the docker directory and build
-COPY Microservicee_Docker/ProjectService/ .
+COPY UserService.csproj/ .
 RUN dotnet publish "UserService.csproj" -c Release -o out
 
 # Build runtime final image
