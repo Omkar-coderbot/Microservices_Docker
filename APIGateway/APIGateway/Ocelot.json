@@ -2,10 +2,10 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/User/",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "52.66.152.140",
           "Port": 7124
         }
       ],
@@ -15,10 +15,10 @@
     },
     {
       "DownstreamPathTemplate": "/api/User/",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "52.66.152.140",
           "Port": 7124
         }
       ],
