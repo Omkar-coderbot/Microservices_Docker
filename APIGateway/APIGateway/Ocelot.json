@@ -29,10 +29,10 @@
 
     {
       "DownstreamPathTemplate": "/api/Product/",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "52.66.152.140",
           "Port": 7033
         }
       ],
@@ -42,10 +42,10 @@
     },
     {
       "DownstreamPathTemplate": "/api/Product/",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "52.66.152.140",
           "Port": 7033
         }
       ],
@@ -62,7 +62,7 @@
         {
           "Name": "User Service API",
           "Version": "v1",
-          "Url": "https://localhost:7124/swagger/v1/swagger.json"
+          "Url": "http://52.66.152.140:7124/swagger/v1/swagger.json"
         }
       ]
     },
@@ -72,7 +72,7 @@
         {
           "Name": "Product Service API",
           "Version": "v1",
-          "Url": "https://localhost:7033/swagger/v1/swagger.json"
+          "Url": "http://52.66.152.140:7033/swagger/v1/swagger.json"
         }
       ]
     }
