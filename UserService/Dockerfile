@@ -18,5 +18,5 @@ RUN dotnet publish "UserService.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-EXPOSE 7124
+EXPOSE 80
 ENTRYPOINT ["dotnet", "UserService.dll"]
