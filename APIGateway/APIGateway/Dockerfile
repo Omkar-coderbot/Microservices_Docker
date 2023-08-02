@@ -33,7 +33,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /app
 
 # Copy the project file and restore dependencies
-COPY *.csproj .
+COPY APIGateway/APIGatway/*.csproj .
 RUN dotnet restore
 
 # Copy the entire project and build the application
