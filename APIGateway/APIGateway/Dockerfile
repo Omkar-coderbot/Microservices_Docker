@@ -61,5 +61,5 @@ EXPOSE 80
 ENTRYPOINT ["dotnet", "APIGateway.dll"]
 
 # Set the entry point for the container to start the API Gateway
-ENTRYPOINT ["dotnet", "APIGateway.dll"]
+# ENTRYPOINT ["dotnet", "APIGateway.dll"]
 
