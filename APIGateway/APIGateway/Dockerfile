@@ -10,13 +10,15 @@ WORKDIR /src
 COPY APIGateway/APIGateway/APIGateway.csproj APIGateway/
 RUN dotnet restore APIGateway/APIGateway.csproj
 
-# Copy the entire application code and build
+# Copy the entire application code
 COPY . APIGateway/
 WORKDIR /src/APIGateway/
-RUN dotnet build -c Release -o /app/build
+
+# Build the project
+RUN dotnet build APIGateway.csproj -c Release -o /app/build
 
 # Publish the application
-RUN dotnet publish -c Release -o /app/publish
+RUN dotnet publish APIGateway.csproj -c Release -o /app/publish
 
 # Stage 2: Create the final runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS final
@@ -30,6 +32,7 @@ EXPOSE 80
 
 # Set the entry point for the container
 ENTRYPOINT ["dotnet", "APIGateway.dll"]
+
 
 
 
