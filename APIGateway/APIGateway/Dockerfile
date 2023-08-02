@@ -40,7 +40,10 @@ RUN dotnet restore
 
 # Copy the entire project and build the application
 COPY . .
-RUN dotnet publish -c Release -o out
+# COPY APIGateway/APIGateway/ .
+RUN dotnet publish "APIGateway.csproj" -c Release -o publish
+# COPY . .
+# RUN dotnet publish -c Release -o out
 
 # Use a lighter runtime image for the final build
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
