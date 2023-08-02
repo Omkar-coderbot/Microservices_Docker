@@ -12,12 +12,12 @@ RUN dotnet restore
 
 
 COPY APIGateway/APIGateway/ .
-RUN dotnet publish "APIGateway.csproj" -c Release -o out
+RUN dotnet publish "APIGateway.csproj" -c Release -o publish
 
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
-COPY --from=build /app/out .
+COPY --from=build /app/publish .
 
 
 EXPOSE 80
