@@ -34,7 +34,7 @@ WORKDIR /app
 
 # Copy the project file and restore dependencies
 RUN pwd
-COPY APIGateway/APIGatway/*.csproj .
+COPY APIGatway/*.csproj .
 RUN dotnet restore
 
 # Copy the entire project and build the application
