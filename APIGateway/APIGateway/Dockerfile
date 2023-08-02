@@ -6,15 +6,15 @@ WORKDIR /app
 
 EXPOSE 80
 
-# copy project csproj file and restore it in docker directory
+
 COPY ["APIGateway/APIGateway/APIGateway.csproj", "."]
 RUN dotnet restore
 
-# Copy everything into the docker directory and build
+
 COPY APIGateway/APIGateway/ .
 RUN dotnet publish "APIGateway.csproj" -c Release -o out
 
-# Build runtime final image
+
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 WORKDIR /app
 COPY --from=build /app/out .
