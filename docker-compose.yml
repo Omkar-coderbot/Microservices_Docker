@@ -9,17 +9,17 @@ services:
   
 
   APIGatewayService:
-    image: omkarm7/apigateway:v1
+    image: omkarm7/project-deployment:apigateway
     ports:
      - "7115:80"
 
   UserMervice:
-    image: omkarm7/userservice:v1
+    image: omkarm7/project-deployment:userservice
     ports:
      - "7124:80"
 
   ProductService:
-    image: omkarm7/productservice:v1
+    image: omkarm7/project-deployment:productservice
     ports:
      - "7033:80"
   
