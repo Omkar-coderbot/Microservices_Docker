@@ -5,7 +5,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "52.66.152.140",
+          "Host": "20.163.2.224",
           "Port": 7124
         }
       ],
@@ -18,7 +18,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "52.66.152.140",
+          "Host": "20.163.2.224",
           "Port": 7124
         }
       ],
@@ -32,7 +32,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "52.66.152.140",
+          "Host": "20.163.2.224",
           "Port": 7033
         }
       ],
@@ -45,7 +45,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "52.66.152.140",
+          "Host": "20.163.2.224",
           "Port": 7033
         }
       ],
@@ -62,7 +62,7 @@
         {
           "Name": "User Service API",
           "Version": "v1",
-          "Url": "http://52.66.152.140:7124/swagger/v1/swagger.json"
+          "Url": "http://20.163.2.224:7124/swagger/v1/swagger.json"
         }
       ]
     },
@@ -72,7 +72,7 @@
         {
           "Name": "Product Service API",
           "Version": "v1",
-          "Url": "http://52.66.152.140:7033/swagger/v1/swagger.json"
+          "Url": "http://20.163.2.224:7033/swagger/v1/swagger.json"
         }
       ]
     }
